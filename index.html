@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yashwanth Holur Narayanaswamy - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-gray-900 text-white font-poppins overflow-x-hidden">
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <span class="navbar-title">Yashwanth</span>
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#contact" class="nav-link">Contact</a>
+
+
+    </div>
+    <div class="navbar-right">
+      <a href="mailto:yashwanth9830@gmail.com" class="nav-icon" title="Email">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/maildotru.svg" width="24" />
+      </a>
+      <a href="https://github.com/yholurnarayanaswamy" class="nav-icon" title="GitHub">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" width="24" />
+      </a>
+      <a href="https://linkedin.com/in/hnyashwanth" class="nav-icon" title="LinkedIn">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" width="24" />
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="min-h-screen flex flex-col items-center justify-center relative px-4 pt-24">
+    <div style="position:relative; width:300px; height:300px; margin:0 auto;">
+      <canvas id="snow-canvas" width="300" height="300" style="position:absolute;top:0;left:0;pointer-events:none;z-index:0;"></canvas>
+      <canvas id="tree-canvas" width="300" height="300" style="position:absolute;top:0;left:0;z-index:1;"></canvas>
+    </div>
+    <div class="text-center z-10 hero-text">
+      <!-- <p class="text-xl">Hi, my name is</p> -->
+      <!-- <h1 class="text-5xl font-bold mb-4">Hi, Yashwanth here.</h1> -->
+      <h1 class="text-5xl font-bold mb-4 hero-typing">
+  <span id="typed-text"></span><span id="typed-cursor" class="blinking-cursor">|</span>
+</h1>
+      <h2 class="text-2xl mb-6">Data Analyst & Data Engineer</h2>
+      <p class="max-w-xl mx-auto">
+I’m a data enthusiast excited about analytics, automation, and building cool things with code—when I’m not laughing at memes, watching anime, catching up on movies, or searching for the perfect cup of coffee.
+</p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 bg-gray-800 flex flex-col items-center px-4">
+    <div class="card-modern w-full max-w-2xl">
+      <h2 class="text-4xl font-bold mb-6">About Me</h2>
+      <p class="max-w-3xl mx-auto text-gray-300">
+       Hi, I’m Yashwanth—part-time data whisperer, full-time caffeine enthusiast, and an enthusiastic builder of data-driven things. I love turning messy numbers into stories, automating away the boring stuff, and finding clever solutions to tricky problems. Whether it’s cleaning up chaos in a spreadsheet or building tools that make business life easier, I believe every dataset has a punchline (and I’m determined to find it).
+        I create stuff—sometimes it’s dashboards, sometimes it’s memes.
+      </p>
+      <div class="mt-6 flex flex-wrap justify-center gap-4">
+        <span class="bg-gray-700 px-4 py-2 rounded">Python</span>
+        <span class="bg-gray-700 px-4 py-2 rounded">SQL</span>
+        <span class="bg-gray-700 px-4 py-2 rounded">Tableau</span>
+        <span class="bg-gray-700 px-4 py-2 rounded">Airflow</span>
+        <span class="bg-gray-700 px-4 py-2 rounded">AWS</span>
+        <span class="bg-gray-700 px-4 py-2 rounded">ML/AI</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-20 bg-gray-900 text-center px-4">
+    <h2 class="text-4xl font-bold mb-6">Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <div class="card-modern">
+        <h3 class="text-xl text-cyan-400 font-semibold mb-2">Social Network Ads Result Analysis</h3>
+        <p class="text-gray-300 mb-2">Developed and optimized ML models to predict purchase likelihood using Social Network Ads dataset.</p>
+        <p class="text-sm text-gray-400">Python, Scikit-learn, XGBoost, Matplotlib, Seaborn</p>
+      </div>
+      <div class="card-modern">
+        <h3 class="text-xl text-cyan-400 font-semibold mb-2">Big Data Pipeline – E-commerce Dataset</h3>
+        <p class="text-gray-300 mb-2">Built a Spark-based data pipeline on GCP Dataproc to process and analyze 100K+ e-commerce records.</p>
+        <p class="text-sm text-gray-400">PySpark, GCP Dataproc, Hive, Parquet</p>
+      </div>
+      <div class="card-modern">
+        <h3 class="text-xl text-cyan-400 font-semibold mb-2">Data Analysis & Visualization Project</h3>
+        <p class="text-gray-300 mb-2">Built a Power BI dashboard for HR metrics, analyzed executive gender balance issues.</p>
+        <p class="text-sm text-gray-400">Power BI, SQL, Pandas</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <!-- <section id="experience" class="py-20 bg-gray-900 text-white flex flex-col items-center px-4">
+    <h2 class="text-4xl font-bold mb-12">Experience</h2>
+    <div class="max-w-5xl w-full space-y-10">
+      <div class="card-modern text-left">
+        <div class="flex justify-between items-center flex-wrap">
+          <h3 class="text-2xl font-semibold text-cyan-400">Software Engineer</h3>
+          <span class="text-gray-400 text-sm">2020 – 2023</span>
+        </div>
+        <p class="text-cyan-200 text-sm mb-2">Mcube, India</p>
+        <p class="text-gray-300">
+          Developed and optimized data pipelines, reduced latency, and integrated real-time recommendations. 
+          Worked on system-level components and contributed to scalable architecture for enterprise applications.
+        </p>
+      </div>
+      <div class="card-modern text-left">
+        <div class="flex justify-between items-center flex-wrap">
+          <h3 class="text-2xl font-semibold text-cyan-400">Data Analyst Intern</h3>
+          <span class="text-gray-400 text-sm">2019 – 2020</span>
+        </div>
+        <p class="text-cyan-200 text-sm mb-2">National Aerospace Laboratories, India</p>
+        <p class="text-gray-300">
+          Built Tableau dashboards and SQL pipelines to support decision-making in aerospace research. 
+          Conducted detailed data analysis and participated in early data engineering projects using batch and stream processing.
+        </p>
+      </div>
+    </div> 
+  </section> -->
+
+  <section id="experience" class="exp-section">
+   <h2 class="text-4xl font-bold mb-12 text-center">Experience</h2>
+  <div class="experience-wrapper flex flex-row max-w-6xl mx-auto gap-12">
+    <div class="experience-tabs">
+      <button class="exp-company active" data-company="amazon">AMAZON</button>
+      <button class="exp-company" data-company="wattpad">WATTPAD</button>
+      <button class="exp-company" data-company="uoft">UNIVERSITY OF TORONTO</button>
+      <button class="exp-company" data-company="centivizer">CENTIVIZER</button>
+      <button class="exp-company" data-company="orange">ORANGE GATE</button>
+    </div>
+    <div >
+      <div class="exp-role active" data-company="amazon">
+        <div class="exp-title">
+          Software Development Engineer <span class="exp-company-name">@ Amazon</span>
+        </div>
+        <div class="exp-duration">JUL 2022 - PRESENT</div>
+        <ul class="exp-details">
+          <li>Led development of end-to-end region build automation for AWS Route 53.</li>
+          <li>Enabled launch of global services in new regions within a day, reducing previous time-frame.</li>
+          <li>Improved user experience for millions of customers by re-building core DNS systems.</li>
+        </ul>
+      </div>
+      <div class="exp-role" data-company="wattpad">
+        <div class="exp-title">
+          Data Engineer <span class="exp-company-name">@ Wattpad</span>
+        </div>
+        <div class="exp-duration">JAN 2021 – JUN 2022</div>
+        <ul class="exp-details">
+          <li>Built analytics pipelines and ETL solutions for user engagement data.</li>
+        </ul>
+      </div>
+      <div class="exp-role" data-company="uoft">
+        <div class="exp-title">
+          Research Assistant <span class="exp-company-name">@ University of Toronto</span>
+        </div>
+        <div class="exp-duration">SEP 2020 – DEC 2020</div>
+        <ul class="exp-details">
+          <li>Conducted research on scalable data infrastructure.</li>
+        </ul>
+      </div>
+      <div class="exp-role" data-company="centivizer">
+        <div class="exp-title">
+          Data Intern <span class="exp-company-name">@ Centivizer</span>
+        </div>
+        <div class="exp-duration">MAY 2020 – AUG 2020</div>
+        <ul class="exp-details">
+          <li>Developed internal dashboards and data automations.</li>
+        </ul>
+      </div>
+      <div class="exp-role" data-company="orange">
+        <div class="exp-title">
+          Web Developer <span class="exp-company-name">@ Orange Gate</span>
+        </div>
+        <div class="exp-duration">JAN 2019 – MAY 2020</div>
+        <ul class="exp-details">
+          <li>Developed responsive websites for local businesses.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Contact -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2 class="contact-title">Let's Connect</h2>
+      <p class="contact-desc">Have a question or want to collaborate? Feel free to reach out.</p>
+      <div class="contact-row">
+        <div class="card-modern contact-card">
+          <div>
+            <!-- <div class="contact-label">Email</div> -->
+            <a href="mailto:yashwanth9830@gmail.com" class="contact-link">Email</a>
+          </div>
+        </div>
+        <div class="card-modern contact-card">
+          <div>
+            <!-- <div class="contact-label">GitHub</div> -->
+            <a href="https://github.com/yholurnarayanaswamy" class="contact-link" target="_blank">GitHub</a>
+          </div>
+        </div>
+        <div class="card-modern contact-card">
+          <div>
+            <!-- <div class="contact-label">LinkedIn</div> -->
+            <a href="https://linkedin.com/in/hnyashwanth" class="contact-link" target="_blank">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="contact-cta">
+        <a href="mailto:yashwanth9830@gmail.com" class="contact-btn">Email Me</a>
+      </div> -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-center text-white py-4">
+    © 2025 Yashwanth Holur Narayanaswamy. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+  <!-- GSAP Animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Animate all card-modern on scroll
+    gsap.utils.toArray('.card-modern').forEach(card => {
+      gsap.to(card, {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: card,
+          start: "top 85%",
+          toggleActions: "play none none none"
+        }
+      });
+    });
+
+    // Hero animation
+    gsap.from(".hero-text", {
+      opacity: 0,
+      y: -30,
+      duration: 1.2,
+      ease: "power3.out",
+      delay: 0.4
+    });
+  </script>
+</body>
+</html>
