@@ -36,67 +36,78 @@ canvas {
   .card-modern { padding: 1.3rem 1rem; }
 }
 
-/* Navbar Styles */
-/* .navbar {
+
+   /* NAVBAR */
+.navbar {
   width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   background: #101b2b;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 40px;
+  padding: 0 2rem;
   min-height: 56px;
-  font-family: 'Montserrat', 'Poppins', Arial, sans-serif;
-  z-index: 1000;          
-  position: sticky;       
-  top: 0;                 
-  box-shadow: 0 2px 16px 0 #0002;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.15);
+  font-family: 'Poppins', sans-serif;
 }
 
+/* Left side */
 .navbar-left {
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: 1.5rem;
 }
 
 .navbar-title {
-  font-weight: bold;
-  color: #cfd8e6;
-  font-size: 1.5rem;
-  margin-right: 18px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #ffffff;
 }
 
+/* Nav links */
 .nav-link {
   color: #cfd8e6;
-  font-size: 1.1rem;
   text-decoration: none;
-  margin: 0 6px;
+  font-size: 1rem;
   transition: color 0.2s;
   position: relative;
 }
 
-.nav-link.active,
-.nav-link:hover {
-  color: #28e6c6;
+.nav-link:hover,
+.nav-link.active {
+  color: #22e6cf;
   font-weight: 600;
 }
 
+/* Right side icons */
 .navbar-right {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 1.2rem;
 }
 
-.nav-icon img, .nav-icon svg {
-  opacity: 0.87;
-  transition: opacity 0.2s, filter 0.2s;
-  filter: brightness(1.2);
+.nav-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  transition: color 0.2s, transform 0.2s, filter 0.2s;
 }
 
-.nav-icon:hover img,
-.nav-icon:hover svg {
-  opacity: 1;
-  filter: drop-shadow(0 2px 8px #21fcfc44);
-} */
+.nav-icon:hover {
+  color: #22e6cf;
+  transform: translateY(-2px);
+}
+
+.nav-icon svg {
+  display: block;
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
 
 .navbar {
   width: 100%;
